@@ -1,0 +1,36 @@
+logging:
+  level:
+    root: info
+    org.tronproject.onecall: debug
+
+server:
+  port: 3111
+
+### jackson序列化配置
+spring.jackson:
+  ## 忽略空值JSON信息 - 返回给前端的时候
+  default-property-inclusion: non_null
+  ## 时间戳
+  serialization.write-dates-as-timestamps: true
+  generator:
+    WRITE_NUMBERS_AS_STRINGS: true
+#spring.redis:
+#  password:
+
+
+tron-blockchain:
+  # apiKey <a href="https://cn.developers.tron.network/reference/apikey">...</a>
+  api-key:
+  # 私钥 - 随意填写合法私钥
+  private-key: ef8663f072ee8766c8d37e92d26e39aabd0031e9b1c190f3cbceb864f8a682ec
+  # Tron网络类型 Mainnet  Shasta  Nile
+  net-type: Mainnet
+  # trc20合约地址
+  trc20-contract-address: TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t
+  # 最低记录值 - 单位个
+  min-amount: 1
+
+  # 自建节点
+  grpcEndpoint:
+  # 自建节点 固化块
+  grpcEndpointSolidity:
