@@ -10,7 +10,7 @@ import org.tron.easywork.handler.transfer.LocalTransferContext;
 import org.tron.easywork.handler.transfer.Trc20TransferHandler;
 import org.tron.easywork.handler.transfer.TrxTransferHandler;
 import org.tron.easywork.model.Trc20ContractInfo;
-import org.tron.easywork.util.ContractUtils;
+import org.tron.easywork.util.Trc20Utils;
 import org.tron.trident.core.ApiWrapper;
 
 import java.util.Map;
@@ -53,7 +53,7 @@ public class BeanLoad {
 
     @Bean
     public Trc20ContractInfo trc20ContractInfo(BlockChainConfig blockChainConfig, ApiWrapper wrapper) {
-        return ContractUtils.readTrc20ContractInfo(blockChainConfig.getTrc20ContractAddress(), wrapper);
+        return Trc20Utils.readTrc20ContractInfo(blockChainConfig.getTrc20ContractAddress(), wrapper);
     }
 
 }
