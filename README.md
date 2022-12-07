@@ -6,7 +6,7 @@ EasyTron 的简单实践，功能：
 
 2.实现对某一个地址进行 trc20 、 trx的实时转账监听
 
-要扩展trc10监听只需要在Spring容器中添加 trx 转账处理器，十分简单。
+要扩展trc10监听只需要在Spring容器中添加 trc10 转账处理器，十分简单。
 
 ---
 
@@ -71,8 +71,3 @@ Tron区块链依赖：[EasyTron](https://github.com/Aiden-777/EasyTron)、[tride
   ]
 }
 ```
-
----
-
-
-Donate：TTTTTtczA5UZM65QJpncXUsH8KwgJTHyXw
